@@ -1,0 +1,134 @@
+*{
+    font-family: 'Raleway';font-size: 20px;
+    color:ghostwhite;
+}
+.intro{
+    margin-top: 15px;
+}
+.intro h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.banner{
+    width:100%;
+    border-bottom: solid;
+    border-bottom-color: black;
+}
+body{
+    background-color:#41464b;
+}
+.nav li:hover{
+    background-color: darkgrey;
+    color: black;
+}
+.nav{
+    background-color: dimgrey;
+    width:100%;
+}
+.nav-inner li{
+    border-bottom-style:solid;
+}
+.nav ul{
+    margin: 0 auto;
+    width:80%;
+}
+.nav li{
+    float:left;
+    width:10%;
+    text-align: center;
+    list-style-type: none;
+    border-left-style:solid;
+    border-color: #1a202c;
+    padding: clamp(5px, 1%, 10px);
+    color:ghostwhite;
+}
+.container-fluid{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+article + article{
+    margin-top: 35px;
+}
+.vehicle-details{
+    display: inline-block;
+    width: 45%;
+}
+.vehicle-overview{
+    display: inline-block;
+    width: 45%;
+}
+.parts{
+    color:black;
+    background-color: darkgrey;
+    border-radius:14px;
+    border-style: solid;
+    position:relative;
+    height:280px;
+    width: 19%;
+    margin: 5px 0 0 5px;
+    float: left;
+    text-align: center;
+}
+.parts a, .parts h1, .parts p{
+    color:black;
+}
+.edit_button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.editmany button{
+margin-top:10px;
+}
+.delete_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.edit_button button, .delete_button button, .editmany button, .btn-primary{
+    padding:9px;
+    border-radius:14px;
+    border-style: solid;
+    color:black;
+    background-color: darkgrey;
+}
+.clear{
+clear:both;
+}
+.hidden{
+    display:none;
+}
+.pagination{
+    list-style: none;
+}
+.page-item{
+    font-size:20px;
+    float:left;
+    padding:4px;
+}
+.page-item a{
+text-decoration: none;
+}
+.edit section{
+    position:relative;
+    width: 80%;
+    min-height: 70px;
+}
+.edit input{
+    position: absolute;
+    width:30%;
+    right: 30%;
+    height:80%;
+}
+.edit h1{
+    position: relative;
+    margin: 0 30px 0 10px;
+    float: left;
+}
+section input{
+    color:black;
+}
+.search input, .search select, .search option, .search button{
+    color: black;
+}
