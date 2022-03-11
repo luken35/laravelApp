@@ -113,7 +113,10 @@ class PagesController extends Controller
     }
 
     public function stockdata(){
-        return Parts::select('location', 'part_num')->get();
+        $locations = Parts::select('location')->distinct()->get();
+        $part_nums = Parts::select('part_num')->distinct()->get();
+
+        return ['parts' => $part_nums, 'locations' => $locations];
     }
 
     public function updatemany(Request $request)

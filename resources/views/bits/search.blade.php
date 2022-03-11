@@ -13,13 +13,13 @@ $local = (new App\Http\Controllers\PagesController)->stockdata();
     @csrf @method('GET')
         <select name="location">
             <option name="default">Filter By Location</option>
-            @foreach($local as $item)
+            @foreach($local['locations'] as $item)
                 <option name="{{$item->location}}" value='{{$item->location}}'>{{$item->location}}</option>
             @endforeach
         </select>
         <select name="partselect">
             <option name="default">Filter By Part Number</option>
-            @foreach($local as $item)
+            @foreach($local['parts'] as $item)
                 <option name="{{$item->part_num}}" value='{{$item->part_num}}'>{{$item->part_num}}</option>
             @endforeach
         </select>
